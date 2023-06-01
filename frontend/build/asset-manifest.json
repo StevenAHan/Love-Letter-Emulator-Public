@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7f2e40d4.css",
+    "main.js": "/static/js/main.e70381f9.js",
+    "static/media/blackchancery.regular.ttf": "/static/media/blackchancery.regular.7d521baec2350e17620c.ttf",
+    "index.html": "/index.html",
+    "main.7f2e40d4.css.map": "/static/css/main.7f2e40d4.css.map",
+    "main.e70381f9.js.map": "/static/js/main.e70381f9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7f2e40d4.css",
+    "static/js/main.e70381f9.js"
+  ]
+}

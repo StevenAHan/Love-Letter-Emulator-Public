@@ -1,0 +1,291 @@
+/* body {
+    background-color: #FEB9B9;
+} */
+
+@font-face {
+    font-family: 'Chancery';
+    src: url('../misc/blackchancery.regular.ttf');
+}
+
+* {
+    font-family: "Chancery", cursive;
+}
+
+.plain {
+    font-family: "Times New Roman";
+}
+
+.guideCards {
+    width: 75px;
+}
+
+.guideButton {
+    width: 75px;
+}
+
+.helpCards {
+    width: 175px;
+}
+
+.helpButton {
+    width: 175px;
+}
+
+.guessCards {
+    width: 75px;
+}
+.guessCardsButton {
+    width: 75px;
+}
+
+#userList {
+    text-align: left;
+    background-color: #f24965;
+    position: absolute;
+    top: 5rem;
+    left: 3rem;
+    width: 25vw;
+    border-radius: 10px;
+    border: 2px solid ;
+    padding: 20px;
+    color: black;
+}
+
+#userList h5 {
+    color: white;
+}
+
+#userList h2 {
+    color: white;
+}
+
+#cardsInDeck {
+    text-align: left;
+    background-color: #f24965;
+    position: absolute;
+    top: 5rem;
+    right: 3rem;
+    width: 25vw;
+    border-radius: 10px;
+    border: 2px solid ;
+    padding: 20px;
+    color: white;
+    border-color: black;
+}
+
+
+.chat-container {
+    max-width: 800px;
+    margin-top: 10px;
+    position: absolute;
+    top: 20rem;
+    left: 3rem;
+    width: 25vw;
+    background: #f36277;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: auto;
+    border: 2px solid;
+    border-color: black;
+}
+
+.won-chat-container {
+    max-width: 800px;
+    margin-top: 10px;
+    position: relative;
+    background: #f36277;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: auto;
+    border: 2px solid;
+    border-color: black;
+}
+
+
+.profilesearchform {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.profilesearchform input[type="text"] {
+    font-size: 16px;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+.profilesearchform input[type="submit"] {
+    font-size: 16px;
+    background-color: #f24965;
+    color: white;
+    padding: 6px 7px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 0px;
+    transition-duration: 0.4s;
+}
+
+.profilesearchform input[type="submit"]:hover {
+    background-color: #ee0028;
+}
+
+
+.homecontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 60vh;
+    height: auto;
+    padding: 50px 0;
+  }
+
+body {
+    background-image: url("../../imgs/homebg.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #fddce0;
+}
+
+
+.full-screen {
+    position: absolute;
+    width: 100%;
+    top: 56px;
+    height: auto;
+    background-color: #fddce0;
+}
+
+.cardButton {
+    position: relative;
+    display: inline-block;
+    width: 300px;
+}
+
+.selectImg {
+    transition: all 0.3s ease;
+    width: 300px;
+}
+
+.cardButton::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(178, 178, 178, 0.5); /* Semi-transparent pink color */
+    opacity: .5;
+    transition: opacity 0.3s ease;
+}
+  
+
+h1,h2,h3,h4,h5,p {
+    color:#fc002a;
+}
+
+.black-text {
+    color: black;
+}
+  
+ .cardButton:hover::before {
+    opacity: 0;
+  }
+
+/* scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 3px;
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+   
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #fe002a;
+    border-radius: 1px;
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #ce0022; 
+}
+
+#seeAllCards {
+    position: absolute;
+    top: 10rem;
+    right: 3rem;
+    width: 25vw;
+}
+
+#guide {
+    position: absolute;
+    top: 13rem;
+    right: 3rem;
+    width: 25vw;
+}
+
+.cover {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fddce0;
+    z-index: -1;
+}
+
+.gameCover {
+    position: absolute;
+    left: -2px;
+    top: -56px;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fddce0;
+    z-index: -1;
+}
+
+
+.minimized {
+    width: 80vw;
+    text-align: center;
+    display: inline-block;
+}
+
+.zoomedCardOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.zoomedCardContainer {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.zoomedCard {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.deleteAcc {
+    position:absolute;
+    bottom: 15vh;
+}
