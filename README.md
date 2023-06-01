@@ -3,36 +3,6 @@
 
 A website that ports the popular card game, Love Letter, to the web. It will allow players to make accounts and play Love Letter with their friends around the world. It will also keep track of player statistics.
 
-## Data Model
-
-This application will store users and games.
-* users will have their game statistics, their username, and their password. The usernames will be unique.
-* games will have the current game status, including the players, the deck, and the hands. This will allow for a paused game to continue, and for players to rejoin if they had to close the tab.
-
-An Example User:
-
-```javascript
-{
-  username: "majikyouser",
-  pass: // a password,
-  stats:{wins: 3, losses: 7}
-}
-```
-
-An Example Game:
-
-```javascript
-{
-  roomcode: "HJKA",
-  players: {/*list of usernames, and the card(s) each user has. The list is in the player turn order. The current player's turn is the player with 2 cards in their hand*/},
-  deckOfCards: {/*list of card strings*/},
-  discardPile: {/*list of discarded card strings*/},
-  started: false
-}
-```
-
-## [Link to Commented First Draft Schema](db.mjs) 
-
 ## Wireframes
 
 / - home page, allowing for users to start new games
@@ -59,30 +29,6 @@ An Example Game:
 /profile - the logged in player's profile
 
 ![profile](documentation/profile.png)
-
-## Site map
-
-![sitemap](documentation/sitemap.png)
-
-## User Stories or Use Cases
-
-1. as non-registered user, I can register a new account with the site
-2. as a user, I can log in to the site
-3. as a user, I can start a new lobby for a game of Love Letter
-4. as a user, I can join a pre-existing lobby for the game
-5. as a host of a lobby, I can start a game if there is more than one player in the lobby
-6. as a player, I can play the game whenever it is my turn by clicking on the card I want to play
-7. as a user, I can view my statistics of my wins, losses, and winstreak
-8. as a user, at any time there is a question mark button at the bottom of the screen, I can click it to get information on how to play
-
-## Research Topics
-
-* (3 points) socket.io - will use socket.io for the particular actions the user will be sending to the server and the server's response
-* (2 points) Bootstrap - will use bootstrap to beautify the website
-* (6 points) React - will use react to create the frontend of the app
-
-11 points total out of 10 required points
-
 
 ## [Link to Initial Main Project File](app.mjs) 
 
