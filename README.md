@@ -1,6 +1,6 @@
 # Love Letter Emulator (Public)
 ## Overview
-link - https://loveletter.herokuapp.com/
+link - https://loveletter.herokuapp.com/.
 A website that ports the popular card game, Love Letter, to the web. It will allow players to make accounts and play Love Letter with their friends around the world. It will also keep track of player statistics.
 
 ## Wireframes
