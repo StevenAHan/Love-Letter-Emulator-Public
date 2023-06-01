@@ -1,5 +1,4 @@
-# Love Letter Emulator
-
+# Love Letter Emulator Public
 ## Overview
 
 A website that ports the popular card game, Love Letter, to the web. It will allow players to make accounts and play Love Letter with their friends around the world. It will also keep track of player statistics.
@@ -94,3 +93,6 @@ An Example Game:
 * https://developer.okta.com/blog/2021/07/14/socket-io-react-tutorial - to learn how to use socket.io with react
 * https://www.digitalocean.com/community/tutorials/how-to-add-login-authentication-to-react-applications - to learn how to add authentication
 * https://stackoverflow.com/questions/14588032/mongoose-password-hashing - to learn how to hash passwords
+
+## Misc Info
+(db.mjs removed for privacy)
